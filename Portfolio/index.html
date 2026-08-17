@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Betinah — Data Analyst, Engineer & Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo">Betinah <span>— data & code</span></div>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#notes">Field Notes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-clock"><span class="dot"></span><span id="clock">Nairobi, KE</span></div>
+  </div>
+</header>
+
+<section class="hero">
+  <canvas id="network"></canvas>
+  <div class="monogram" aria-hidden="true">B</div>
+  <div class="hero-content">
+    <span class="eyebrow">Vol. I — Statistics &amp; Data Science, JKUAT</span>
+    <h1 class="name">Betinah Onyango<br><span class="shimmer">finds the story in data.</span></h1>
+    <svg class="swoosh" width="220" height="20" viewBox="0 0 220 20" fill="none" aria-hidden="true">
+      <path d="M2 14C40 4 80 4 110 12C140 20 180 20 218 6" stroke="#B76E79" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <p class="hero-sub">Data Analyst · Data Engineer · Full-Stack Developer</p>
+    <p class="hero-desc">I find the story hiding in raw data, test it until I trust it, and build it into software worth using. Currently based in Nairobi, Kenya.</p>
+    <div class="role-strip">
+      <div>✦ Data Analysis</div>
+      <div>✦ Data Engineering</div>
+      <div>✦ Full-Stack Development</div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn" href="#work">See the work ↓</a>
+      <a class="btn ghost" href="#contact">Say hello</a>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-band">
+  <div class="ticker-track" id="ticker"></div>
+</div>
+
+<section class="masthead">
+  <div class="wrap masthead-grid">
+    <p class="pull reveal"><span class="cap">E</span>very dataset carries a story too complex for a single clean number. I live in that in-between space — reading the signal closely, testing it until it holds, and shaping it into software people actually enjoy using.</p>
+    <div class="facts reveal">
+      <div class="fact-row"><span class="k">Location</span><span class="v">Nairobi, Kenya</span></div>
+      <div class="fact-row"><span class="k">Studying</span><span class="v">BSc Data Science &amp; Analytics, JKUAT</span></div>
+      <div class="fact-row"><span class="k">Focus</span><span class="v">Annotation quality · ETL Pipelines · full-stack delivery </span></div>
+      <div class="fact-row"><span class="k">Core stack</span><span class="v">Python, SciPy, scikit-learn, Docker,Airflow</span></div>
+      <div class="fact-row"><span class="k">Also builds with</span><span class="v">JavaScript, React, SQL, AWS</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="sec-title">Field Readings</h2>
+      <span class="sec-num">— skills, sorted by discipline</span>
+    </div>
+
+    <div class="tabs reveal">
+      <button class="tab active" data-tab="analysis">Data Analysis</button>
+      <button class="tab" data-tab="engineering">Engineering &amp; ML</button>
+      <button class="tab" data-tab="fullstack">Full-Stack</button>
+    </div>
+
+    <div class="skill-panel active" data-panel="analysis">
+      <div class="skill-row"><span class="skill-name">Statistical inference</span><div class="skill-track"><div class="skill-fill" data-pct="70"></div></div><span class="skill-pct">70%</span></div>
+      <div class="skill-row"><span class="skill-name">Exploratory data analysis</span><div class="skill-track"><div class="skill-fill" data-pct="90"></div></div><span class="skill-pct">90%</span></div>
+      <div class="skill-row"><span class="skill-name">SciPy &amp; statsmodels</span><div class="skill-track"><div class="skill-fill" data-pct="80"></div></div><span class="skill-pct">80%</span></div>
+      <div class="skill-row"><span class="skill-name">Regression modeling</span><div class="skill-track"><div class="skill-fill" data-pct="70"></div></div><span class="skill-pct">70%</span></div>
+      <div class="skill-row"><span class="skill-name">Annotation QA &amp; inter-annotator agreement</span><div class="skill-track"><div class="skill-fill" data-pct="85"></div></div><span class="skill-pct">85%</span></div>
+    </div>
+
+    <div class="skill-panel" data-panel="engineering">
+      <div class="skill-row"><span class="skill-name">Python (pandas / numpy)</span><div class="skill-track"><div class="skill-fill" data-pct="88"></div></div><span class="skill-pct">88%</span></div>
+      <div class="skill-row"><span class="skill-name">scikit-learn</span><div class="skill-track"><div class="skill-fill" data-pct="80"></div></div><span class="skill-pct">80%</span></div>
+      <div class="skill-row"><span class="skill-name">Text &amp; sentiment classification</span><div class="skill-track"><div class="skill-fill" data-pct="83"></div></div><span class="skill-pct">83%</span></div>
+      <div class="skill-row"><span class="skill-name">Data labeling &amp; RLHF pipelines</span><div class="skill-track"><div class="skill-fill" data-pct="80"></div></div><span class="skill-pct">80%</span></div>
+      <div class="skill-row"><span class="skill-name">AWS fundamentals (S3, SageMaker, Glue)</span><div class="skill-track"><div class="skill-fill" data-pct="55"></div></div><span class="skill-pct">55%</span></div>
+    </div>
+
+    <div class="skill-panel" data-panel="fullstack">
+      <div class="skill-row"><span class="skill-name">JavaScript / React</span><div class="skill-track"><div class="skill-fill" data-pct="75"></div></div><span class="skill-pct">75%</span></div>
+      <div class="skill-row"><span class="skill-name">Node.js &amp; REST APIs</span><div class="skill-track"><div class="skill-fill" data-pct="70"></div></div><span class="skill-pct">70%</span></div>
+      <div class="skill-row"><span class="skill-name">SQL / PostgreSQL</span><div class="skill-track"><div class="skill-fill" data-pct="78"></div></div><span class="skill-pct">78%</span></div>
+      <div class="skill-row"><span class="skill-name">Git &amp; version control</span><div class="skill-track"><div class="skill-fill" data-pct="85"></div></div><span class="skill-pct">85%</span></div>
+      <div class="skill-row"><span class="skill-name">Responsive UI</span><div class="skill-track"><div class="skill-fill" data-pct="76"></div></div><span class="skill-pct">76%</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="sec-title">Dispatches</h2>
+      <span class="sec-num">— selected work, in progress and done</span>
+    </div>
+
+    <div class="dispatch reveal">
+      <div>
+        <div class="d-tag"><span class="eyebrow">Dispatch 01</span><span class="draft">In progress</span></div>
+        <div class="d-title">Annotation Quality &amp; Sentiment Classification</div>
+        <p class="d-desc">My final-year project asks a simple question: does the quality of human labels change how well a sentiment model performs? I'm testing it on a 2021 dataset of Kenyan political tweets, where several annotators label independently and their agreement becomes part of the evaluation itself.</p>
+        <div class="d-meta">PYTHON · PANDAS · SCIKIT-LEARN · AGREEMENT STATISTICS</div>
+      </div>
+      <div class="d-visual">
+        <canvas id="chart1"></canvas>
+        <div class="d-caption">illustrative — annotation agreement across rounds</div>
+      </div>
+    </div>
+
+    <div class="dispatch reveal">
+      <div>
+        <div class="d-tag"><span class="eyebrow">Dispatch 02</span><span class="draft">Replace me</span></div>
+        <div class="d-title">Full-Stack Analytics Dashboard</div>
+        <p class="d-desc">An open slot, waiting for a real project — picture a dashboard that pulls in a dataset, runs it through a Python analysis layer, and shows the results as interactive charts in a React front end. Swap this in once it exists.</p>
+        <div class="d-meta">REACT · NODE.JS · POSTGRESQL · CHART.JS</div>
+      </div>
+      <div class="d-visual">
+        <canvas id="chart2"></canvas>
+        <div class="d-caption">illustrative — request volume over time</div>
+      </div>
+    </div>
+
+    <div class="dispatch reveal">
+      <div>
+        <div class="d-tag"><span class="eyebrow">Dispatch 03</span><span class="draft">Replace me</span></div>
+        <div class="d-title">ETL Pipeline for Streaming Text Data</div>
+        <p class="d-desc">Another open slot — a pipeline that collects, cleans, and stores incoming text data on a schedule, ready for whatever model comes next. Replace with your own work when it's ready.</p>
+        <div class="d-meta">PYTHON · SQL · AWS S3 · SCHEDULED JOBS</div>
+      </div>
+      <div class="d-visual">
+        <canvas id="chart3"></canvas>
+        <div class="d-caption">illustrative — records processed per batch</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="notes" id="notes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="sec-title">Field Notes</h2>
+      <span class="sec-num">— a short history of how I got here</span>
+    </div>
+    <div class="timeline reveal">
+      <div class="t-row">
+        <span class="t-when">February 2023 - August 2023</span>
+        <div class="t-what">
+          <strong>Finance and Analytics Intern - Molars Dental Limited</strong>
+          <p>Assisting with financial reporting and data analysis tasks, gaining experience in using Excel and SQL for data manipulation and visualization. Managed daily financial records and prepared reports for management review.</p>
+        </div>
+      </div>
+      <div class="t-row">
+        <span class="t-when">June 2025 - September 2025</span>
+        <div class="t-what">
+          <strong>Data Analytics and Engineering Intern - Infotrace Analytics</strong>
+          <p>Helped analyze and visualize data to support business decisions. Gained experience with SQL and Python for data processing and reporting.</p>
+        </div>
+      </div>
+      <div class="t-row">
+        <span class="t-when">In progress</span>
+        <div class="t-what">
+          <strong>Data Analytics, Science and Engineering Intern - Sanku Kenya</strong>
+          <p>Working on data analysis and engineering projects, applying statistical methods and machine learning techniques to solve fortification challenges and curb malnutrition.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2 class="reveal">Let's turn your data into something worth <span class="shimmer2">trusting.</span></h2>
+    <div class="contact-links reveal">
+      <a href="mailto:you@example.com">✉ betinahonyango@icloud.com</a>
+      <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Betinah — designed and built with data, care, and a little sparkle.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
