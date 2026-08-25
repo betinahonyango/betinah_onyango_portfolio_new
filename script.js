@@ -32,7 +32,7 @@ tabs.forEach(tab=>{
   });
 });
 
-// ---------- reveal on scroll ----------
+// ---------- scroll function ----------
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{
@@ -127,7 +127,7 @@ function loop(t){ drawFrame(t||0); if(!reduced) requestAnimationFrame(loop); }
 resize();
 if(reduced){ drawFrame(0); } else { requestAnimationFrame(loop); }
 
-// ---------- mini bar chart helper ----------
+// ---------- bar chart  ----------
 function drawBars(id, values, colorA, colorB){
   const c = document.getElementById(id);
   const dctx = c.getContext('2d');
@@ -158,5 +158,4 @@ function drawBars(id, values, colorA, colorB){
   window.addEventListener('resize', render);
 }
 drawBars('chart1', [42,58,67,74,81,88,91], '#B76E79', 'rgba(183,110,121,0.12)');
-drawBars('chart2', [30,45,40,60,55,72,68,80], '#C9A15A', 'rgba(201,161,90,0.12)');
 drawBars('chart3', [50,62,58,70,66,77,84], '#9C4F5C', 'rgba(156,79,92,0.12)');
